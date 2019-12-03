@@ -1,0 +1,130 @@
+<Project>
+  <Name>Untitled</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>Untitled</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>PostsDataAggregator</Name>
+        <Access>Public</Access>
+        <Location left="903" top="642" />
+        <Size width="348" height="286" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">SortedSet&lt;User.Id, int&gt; m_UserLikes</Member>
+        <Member type="Field">LikesComparer m_LikesComparer</Member>
+        <Member type="Property">public int NewProperty { get; set; }</Member>
+        <Member type="Method">public void CountLikesPerUsert()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>InfluenceAnalyzer</Name>
+        <Access>Public</Access>
+        <Location left="877" top="358" />
+        <Size width="377" height="259" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">public SortedSet&lt;User.id, int&gt; GetUsersWhoLikeMyContent()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>InfluencersToolkit</Name>
+        <Access>Public</Access>
+        <Location left="194" top="31" />
+        <Size width="247" height="243" />
+        <Collapsed>False</Collapsed>
+        <Member type="Property">public UIPopulator UIDataPopulator { get; set; }</Member>
+        <Member type="Property">public AppSettings CurrentAppSettings { get; set; }</Member>
+        <Member type="Property">public LoginResult LoginResult { get; set; }</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>LikesComperer</Name>
+        <Access>Public</Access>
+        <Location left="1393" top="684" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Enum">
+        <Name>eInfluenecAnalsyisType</Name>
+        <Access>Public</Access>
+        <Location left="380" top="531" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Value>InfluencePreservation</Value>
+        <Value>InfluenceExpansion</Value>
+      </Entity>
+      <Entity type="Class">
+        <Name>NewClass</Name>
+        <Access>Public</Access>
+        <Location left="171" top="542" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Interface">
+        <Name>Icomparer</Name>
+        <Access>Public</Access>
+        <Location left="1393" top="152" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+      </Entity>
+      <Entity type="Class">
+        <Name>UIPopulator</Name>
+        <Access>Public</Access>
+        <Location left="926" top="31" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private PostInfluenceAnalyzer m_InfluenceAnalyzer</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AppSettings</Name>
+        <Access>Public</Access>
+        <Location left="622" top="531" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Realization" first="3" second="6">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Association" first="0" second="3">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="2" second="7">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="2" second="8">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>297</X>
+          <Y>299</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="7" second="1">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>
